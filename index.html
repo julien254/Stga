@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="fr">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>example</title>
+		<link rel="stylesheet" href="test.css">
+		<script src="test.js"></script>
+	
+	</head>
+
+	<body>
+	
+		<header>
+				
+			<img src="img/headerStga.jpg">
+			<button id="buttonActive" type="button" onfocus="blur()" onclick="recupDate()"></button>
+			<button id="buttonReset" type="button" onfocus="blur()" onclick="reset()"></button>
+			
+				
+		</header>
+		
+		<div id="container" ontouchstart="moveBoule(event)" ontouchmove="moveBoule(event)" ontouchend="resetBoule()">
+			
+			<div id="logo" >
+			
+				<img id="button" src="img/logoStga.jpg">
+				<div class="animeBoule" id="baliseBoule">
+		
+					<div id="bouleStga1" class="bouleStga" ></div>
+					<div id="bouleStga2" class="bouleStga" ></div>
+					
+				</div>
+				
+			</div>
+			
+			<div>
+			
+				<img src="img/periodeValideStga.jpg">
+			
+			</div>
+		
+			<div class="containerDates">
+			
+				<div id="date1">
+				
+					<img class="date" src="img/date1.jpg">
+					<p id="jsDate1">00/00/0000</p><p id="jsHeure1"  class="jsHeure" >00:00</p>
+					
+				</div>
+				
+				<div class="" id="date2">
+				
+					<img class="date" src="img/date2.jpg">
+					<p id="jsDate2">00/00/0000</p><p id="jsHeure2"  class="jsHeure" >00:00</p>
+					
+				</div>
+				
+			</div>
+				
+			<div>
+			
+				<img src="img/infoControl.jpg">
+			
+			</div>
+			
+			<div class="containerDates">
+			
+				<div>
+				
+					<img id="picto" src="img/picto.jpg">
+				
+				</div>
+				
+				<div class="positionDate3">
+					
+					<img id="date3" src="img/date3.jpg">
+					<p id="dateControle">00/00/0000</p><p id="jsHeure3" >00:00</p>
+					
+				</div>
+				
+				<div id="numSerieIndex">
+				
+					<img id="numSerie" src="img/numSerie.jpg">
+				
+				</div>
+				
+				<div>
+				
+					<img id="compteur" src="img/compteur.jpg">
+					<p id="compteurPos"><span id="span" >0:00</span></p>
+				</div>
+			
+			</div>
+			
+			<div id="footer" >
+			
+				<img src="img/barreCharge.jpg">
+				<div id="charge">
+				
+					<div id="debutCharge" ></div>
+					<div class="defaultCharge" id="baliseCharge"  ></div>
+				
+				</div>
+			
+			</div>
+			
+			<div >
+			
+				<img id="correction" src="img/correction.jpg">
+			
+			</div>
+		
+		</div>
+		
+	</body>
+
+</html>

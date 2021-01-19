@@ -1,0 +1,312 @@
+
+
+html, body {
+
+	margin:0;
+	font-size: 6.2vw;
+	font-weight: 850;
+	overflow:;
+	
+}
+
+img {
+
+	width : 100vw;
+	display: block;
+	
+}
+
+p{
+
+	border: solid black 0px;
+	text-align: center;
+	width: 50vw;
+	position:absolute ;
+	top: -4vw;
+	left: 0;
+	
+}
+
+button {
+
+	position:absolute;
+	border:solid 0px black;
+	background-color:transparent;
+	border-radius:4.5vw;
+}
+
+#buttonActive {
+
+	top: 3.3vw;
+	left: 87.7vw;
+	width: 9vw;
+	height: 9vw;
+	
+
+}
+
+#buttonReset {
+
+	top:4vw;
+	left: 5vw;
+	width: 7.5vw;
+	height: 7.5vw;
+	
+}
+
+#logo {
+
+	position:relative ;
+
+}
+
+.animeBoule {
+
+	border:solid 0px black;
+	position:absolute;
+	top:26.5vw;
+	left:27vw;
+	width:45.8vw;
+	height:45.8vw;
+	border-radius:23vw;
+	z-index: 999999;
+
+}
+
+@keyframes rotateBoule {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animeBouleEnd {
+
+	animation-duration: 3000ms;
+	animation-name: rotateBoule;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+}
+
+.bouleStga {
+
+	width: 9vw;
+	height: 9vw;
+	border: solid black 0px;
+	position:absolute;
+	border-radius: 4.5vw;
+	
+
+}
+
+#bouleStga1 {
+
+	top: 18.8vw;
+	left: -4.8vw;
+	background-color: blue;
+
+}
+
+#bouleStga2 {
+
+	top: 18.8vw;
+	right: -4.8vw;
+	background-color: orange;
+
+}
+
+.date {
+
+	width: 50vw;
+	
+}
+
+.containerDates {
+
+	position:relative;
+	
+}
+
+#date1 {
+
+	margin-left: 0.1054vw;
+	position:relative;
+	border: solid 0px black;
+}
+
+
+#date2 {
+
+	position:absolute;
+	right:-0.05vw;
+    top:0;
+    margin-right:-0vw;
+    
+}
+
+.jsHeure {
+
+	font-weight: 450;
+	font-size: 5.7vw;
+	top:4.4vw;
+
+}
+
+#picto {
+
+	width: 20.7vw;
+	float:left;
+
+}
+
+#date3 {
+
+	width:58.2vw;
+	padding-left:0.13vw;
+	margin-top: -0.01vw ;
+	
+
+}
+
+.positionDate3 {
+
+	position: relative;
+	z-index: -9999;
+	overflow: hidden;
+		
+}
+
+#jsHeure3 {
+
+	font-weight: 450;
+	font-size: 5.7vw;
+	width:57vw;
+	top:4vw;
+	left:0;
+
+}
+
+#numSerie {
+
+	width:58.2vw;
+	margin-top: -0.2vw;
+	margin-left: 0.14vw;
+	
+
+	
+}
+
+#numSerieIndex {
+
+	z-index: 9999;
+
+}
+
+#compteur {
+
+	width: 21.1vw;
+	position: absolute;
+	right:0;
+	top: 0;
+	margin-top: -0.35vw;
+	margin-right: -0.06vw;
+	
+}
+
+#dateControle {
+
+	width: 58.2vw;
+	position:absolute ;
+	top: -4vw;
+	left: -1vw;
+	
+}
+
+#compteurPos {
+
+	position:absolute;
+	left: 76.5vw;
+	top:2.5vw;
+	width:21vw;
+
+}
+
+#compteurPos span {
+
+	font-weight: 750;
+	font-size: 5.8vw;
+	color: #00d00a;
+	letter-spacing:-0.2vw;
+
+}
+
+span {
+
+	font-weight: 450;
+	font-size: 5.7vw;
+
+}
+
+#footer {
+
+	position: relative;
+
+}
+
+#charge {
+
+	position:absolute ;
+	top:6.08vw ;
+	left:4.25vw ;
+	width: 91.3vw;
+	height:2.85vw;
+	margin-left:0.1vw;
+	background-color: black;
+	border-radius: 1.7vw;
+	overflow:hidden;
+	
+}
+
+#debutCharge {
+
+	height: 100%;
+	width: 5%;
+	background-color: #00d00a;
+	float:left;
+
+
+}
+
+.defaultCharge{
+
+	height: 100%;
+	width: 95%;
+	background-color: #00d00a;
+	float: left;
+	border: solid black 0px;
+	transform:scaleX(0);
+	transform-origin: left;
+}
+
+.animeCharge {
+
+	transform:scaleX(1);
+	transition:transform 3600000ms linear;
+}
+
+#correction {
+
+	width:16.8vw;
+	position:absolute;
+	top:128.92vw;
+	left:47.7vw;
+}
+
+.border {
+
+	border: solid 1px black;
+
+}
