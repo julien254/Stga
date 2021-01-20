@@ -4,9 +4,9 @@ html, body {
 
 	margin:0;
 	font-size: 6.2vw;
-	font-weight: 850;
+	font-weight: 770;
 	overflow-x:hidden;
-	
+	font-family:sans-serif;
 }
 
 img {
