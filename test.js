@@ -149,7 +149,7 @@ function recupDate(){
 	var y = document.getElementById("baliseBoule");
 	y.classList.add('animeBouleEnd');
 	y.style.animationIterationCount = "infinite";
-	alert(window.pageYOffset);
+	alert("Vous voilà prêt pour voyager Gratuitement pendant une heure! N'hesitez pas à appuyer sur la flèche de retour pour relancer un nouveau ticket ;)" );
 }
 
 function moveBouleTouch(event) {
