@@ -5,7 +5,7 @@ html, body {
 	margin:0;
 	font-size: 6.2vw;
 	font-weight: 770;
-	overflow:hidden;
+	overflow-x:hidden;
 	font-family:sans-serif;
 }
 
@@ -57,6 +57,7 @@ button {
 #logo {
 
 	position:relative ;
+	top: -0.3vw;
 
 }
 
