@@ -5,7 +5,7 @@ html, body {
 	margin:0;
 	font-size: 5.7vw;
 	font-weight: 770;
-	overflow-x:hidden;
+	overflow:hidden;
 	font-family:sans-serif;
 }
 
