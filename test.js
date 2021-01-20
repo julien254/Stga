@@ -2,6 +2,24 @@ var secondeCompteur = 0;
 var minuteCompteur = 0;
 var check = false;
 var i = 0;
+
+function pixelToVw(pixel) {
+	
+	var vw = 0;
+	var largeur = window.innerWidth;
+	vw = (pixel / largeur) * 100;
+	return (vw - 23.4) + "vw";	
+}
+
+function pixelToVh(pixel) {
+	
+	var vw = 0;
+	var largeur = window.innerWidth;
+	var decal = (largeur / 100) * 15.55;
+	vw = ((pixel - decal) / largeur) * 100;
+	return (vw - 23.4) + "vw";	
+}
+
 function compteur() {
 
 	if(check){
@@ -54,7 +72,7 @@ function compteur() {
 
 }
 
-function recupDate() {
+function recupDate(){
 
 	check = true;
 	var date = new Date();
@@ -131,22 +149,66 @@ function recupDate() {
 	var y = document.getElementById("baliseBoule");
 	y.classList.add('animeBouleEnd');
 	y.style.animationIterationCount = "infinite";
-	
+	alert(window.pageYOffset);
 }
 
-function moveBoule(event) {
+function moveBouleTouch(event) {
 	
 	if (check) {
-	
+		console.log(event);
+
 		var posX = event.touches[0].clientX;
 		var posY = event.touches[0].clientY;
+		var posYFinal = posY + window.pageYOffset;
 		var boules = document.getElementById("baliseBoule");
-		boules.style.top = (posY - 168 )+ "px";
-		boules.style.left = (posX - 80 ) + "px";
+		boules.style.top = (pixelToVh(posYFinal));
+		boules.style.left = (pixelToVw(posX));
 		boules.style.animationDuration = "1000ms";
 	
 	}
 }
+
+function moveBouleSouris(event) {
+	
+	if (check) {
+
+		var posX = event.clientX;
+		var posY = event.clientY;
+		var posYFinal = posY + window.pageYOffset;
+		var boules = document.getElementById("baliseBoule");
+		boules.style.top = (pixelToVh(posYFinal));
+		boules.style.left = (pixelToVw(posX));
+		boules.style.animationDuration = "1000ms";
+		
+		
+	
+	}
+}
+
+var example = document.getElementById("example");
+var position = {
+    X: 0,
+    Y: 0
+};
+var downFlag = false;
+
+function down(event) {
+    downFlag = true;
+    position.X = event.clientX;
+    position.Y = event.clientY;
+	moveBouleSouris(event);
+};
+function up(event) {
+    downFlag = false;
+	resetBoule();
+};
+function move(event) {
+    if (downFlag) {
+        if (position.X !== event.clientX || position.Y !== move.clientY) {
+            moveBouleSouris(event);
+        }
+    }
+};
 
 function reset(){
 
@@ -176,3 +238,7 @@ function resetBoule() {
 	elem.style.animationDuration = "3000ms";
 
 }
+
+
+	
+

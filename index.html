@@ -12,7 +12,7 @@
 	</head>
 
 	<body>
-	
+		
 		<header>
 				
 			<img src="img/headerStga.jpg">
@@ -21,8 +21,9 @@
 			
 				
 		</header>
-		
-		<div id="container" ontouchstart="moveBoule(event)" ontouchmove="moveBoule(event)" ontouchend="resetBoule()">
+		<div id="zone" onmousedown="down(event)" onmousemove="move(event)" onmouseup="up(event)" ontouchstart="moveBouleTouch(event)" ontouchmove="moveBouleTouch(event)" ontouchend="resetBoule()">
+		</div>
+		<div id="container">
 			
 			<div id="logo" >
 			
