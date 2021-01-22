@@ -1,324 +1,139 @@
-
-
-html, body {
-
+body, html{
+	
 	margin:0;
-	font-size: 5.8vw;
-	font-weight: 770;
-	overflow-x:hidden;
-	font-family:sans-serif;
+	overflow:hidden;
+	font-family:arial;
+	
+}
+
+#background {
+	
+	width:100vw;
+	height:100vh;
+
+	
 }
 
 img {
-
-	width : 100vw;
-	display: block;
+	
+	display:block;
 	
 }
 
-p{
-
-	border: solid black 0px;
-	text-align: center;
-	width: 50vw;
-	position:absolute ;
-	top: -3vw;
-	left: 0;
+header {
 	
+	width:100vw;
+	height:7.7vh;
+	border: solid 0px black;
+	position: absolute;
+	top:0;
+	left:0;
+	overflow:hidden;
 }
 
-button {
+#fleche {
+	
+	border-radius: 50%;
+	position: absolute;
+	width:4vh;
+	height:auto;
+	left:5.37vw;
+	top:2vh;
+}
 
+#cqr { 
+
+	border-radius: 50%;
 	position:absolute;
-	border:solid 0px black;
-	background-color:transparent;
-	border-radius:4.5vw;
-}
-
-#buttonActive {
-
-	top: 3.3vw;
-	left: 87.7vw;
-	width: 9vw;
-	height: 9vw;
-	
-
-}
-
-#buttonReset {
-
-	top:4vw;
-	left: 5vw;
-	width: 7.5vw;
-	height: 7.5vw;
+	width:4.6vh;
+	height:auto;
+	right:3.8vw;
+	top:1.7vh;
 	
 }
 
 #logo {
 
-	position:relative ;
-	top: -0.01vw;
-
-}
-
-.animeBoule {
-
-	border:solid 0px black;
-	position:absolute;
-	top:26.5vw;
-	left:27vw;
-	width:45.8vw;
-	height:45.8vw;
-	border-radius:23vw;
-	z-index: 2;
-
-}
-
-@keyframes rotateBoule {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-.animeBouleEnd {
-
-	animation-duration: 3000ms;
-	animation-name: rotateBoule;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	
-}
-
-.bouleStga {
-
-	width: 9vw;
-	height: 9vw;
-	border: solid black 0px;
-	position:absolute;
-	border-radius: 4.5vw;
-	
-
-}
-
-#bouleStga1 {
-
-	top: 18.8vw;
-	left: -4.8vw;
-	background-color: blue;
-
-}
-
-#bouleStga2 {
-
-	top: 18.8vw;
-	right: -4.8vw;
-	background-color: orange;
-
-}
-
-.date {
-
-	width: 50vw;
-	
-}
-
-.containerDates {
-
-	position:relative;
-	
-}
-
-#date1 {
-
-	margin-left: 0.1054vw;
-	position:relative;
+	height:50.55vh;
+	width:100vw;
 	border: solid 0px black;
+	position:absolute;
+	top:7.7vh;
+	text-align:center;
 }
 
+#imgLogo {
+
+	border-radius:50%;
+	width: auto;
+	height: 26vh;
+	display:inline;
+	margin-top:12.3vh;
+
+}
+
+#titreCadre1 {
+
+	border: solid 0px black;
+	width:100vw;
+	height:8.5vh;
+	position:absolute;
+	top:58.35vh;
+	text-align:center;
+
+}
+
+#voyage {
+
+	height:2.65vh;
+	position:absolute;
+	top:2vh;
+	left:6.4vw;
+
+}
+
+#periode {
+
+	display:inline;
+	height:1.58vh;
+	position:relative;
+	top:6.3vh;
+	
+}
+
+.datesContainer {
+
+	width:50vw;
+	height:9.9vh;
+	position:absolute;
+	top:67.1vh;
+	border: solid 0px black;
+	text-align:center;
+	font-weight:870;
+	font-size:3.5vh;
+}
+
+.dates {
+
+	margin-top:0.6vh;
+	padding-right:0.6vw;
+
+}
 
 #date2 {
 
-	position:absolute;
 	left:50vw;
-    top:0;
-    
-}
-
-.jsHeure {
-
-	font-weight: 450;
-	font-size: 5.5vw;
-	top:3.6vw;
 
 }
 
-#picto {
+.heure {
 
-	width: 20.7vw;
-	float:left;
-
-}
-
-#date3 {
-
-	width:58.2vw;
-	padding-left:0.13vw;
-	margin-top: -0.01vw ;
-	margin-left: -0.07vw;
+font-weight:500;
+font-size:3.2vh;
+position:relative;
+top:-4.25vh;
+padding-right:0.6vw;
 
 }
 
-.positionDate3 {
-
-	position: relative;
-	z-index: 0;
-	overflow: hidden;
-	font-size: 6.3vw;
-}
-
-#jsHeure3 {
-
-	font-weight: 450;
-	font-size: 6vw;
-	width:57vw;
-	top:2.5vw;
-	left:0;
-
-}
-
-#numSerie {
-
-	width:58.2vw;
-	margin-top: -0.17vw;
-	
-
-	
-}
-
-#numSerieIndex {
-	
-	position:relative;
-	left:0.07vw;
-	z-index: 1;
-
-}
-
-#compteur {
-
-	width: 21.1vw;
-	position: absolute;
-	left:78.97vw;
-	top: 0;
-	margin-top: -0.35vw;
-	margin-right: -0.06vw;
-	
-}
-
-#dateControle {
-
-	width: 58.2vw;
-	position:absolute ;
-	top: -3.9vw;
-	left: -1vw;
-	
-}
-
-#compteurPos {
-
-	position:absolute;
-	left: 76.5vw;
-	top:3vw;
-	width:21vw;
-
-}
-
-#compteurPos span {
-
-	font-weight: 750;
-	font-size: 5.8vw;
-	color: #00d00a;
-	letter-spacing:-0.2vw;
-
-}
-
-span {
-
-	font-weight: 450;
-	font-size: 5.5vw;
-
-}
-
-#footer {
-
-	position: relative;
-
-}
-
-#charge {
-
-	position:absolute ;
-	top:6.08vw ;
-	left:4.25vw ;
-	width: 91.3vw;
-	height:2.85vw;
-	margin-left:0.1vw;
-	background-color: black;
-	border-radius: 1.7vw;
-	overflow:hidden;
-	
-}
-
-#debutCharge {
-
-	height: 100%;
-	width: 5%;
-	background-color: #00d00a;
-	float:left;
-
-
-}
-
-.defaultCharge{
-
-	height: 100%;
-	width: 95%;
-	background-color: #00d00a;
-	float: left;
-	border: solid black 0px;
-	transform:scaleX(0);
-	transform-origin: left;
-}
-
-.animeCharge {
-
-	transform:scaleX(1);
-	transition:transform 3600000ms linear;
-}
-
-#correction {
-
-	width:16.8vw;
-	position:absolute;
-	top:128.92vw;
-	left:47.7vw;
-}
-
-.border {
-
-	border: solid 1px black;
-
-}
-
-#zone {
-	
-	position:absolute;
-	top: 15.55vw;
-	border: solid 0px black;
-	width: 100vw;
-	height:181vw;
-	z-index:4;
-	user-select:none;
-}
+/* border: solid 1px black; */
