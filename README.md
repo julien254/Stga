@@ -1,2 +1,0 @@
-# Stga
-Take your tikets! 
