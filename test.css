@@ -314,33 +314,15 @@ header {
 	
 }
 
-#debutCharge {
-
-	height: 103%;
-	width: 5%;
-	background-color: #00d00a;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:1;
-	border-radius:0.75vh 0 0 0.75vh;
-	
-
-}
-
 .defaultCharge{
 
-	height: 120%;
-	width: 95%;
+	height: 100%;
+	width: 100%;
 	background-color: #00d00a;
-	float:left;
 	border: solid black 0px;
-	position:absolute;
-	top:0;
-	left:4.9%;
-	transform:scaleX(0.4);
+	transform:scaleX(0.05);
 	transform-origin: left;
-	z-index:2;
+	
 }
 
 .animeCharge {
