@@ -1,6 +1,7 @@
-body, html{
+body{
 	
 	margin:0;
+	height:100vh;
 	overflow:hidden;
 	font-family:arial;
 	border:solid 0px black;
@@ -11,7 +12,6 @@ body, html{
 	
 	width:100vw;
 	height:100vh;
-	overflow:hidden;
 
 	
 }
@@ -43,6 +43,7 @@ header {
 	top:2vh;
 	margin-left:-1.5vh;
 	border:solid 0px black;
+	z-index:20;
 }
 
 #cqr { 
@@ -55,7 +56,7 @@ header {
 	top:1.7vh;
 	margin-right:-1.7vh;
 	border:solid 0px black;
-	
+	z-index:20;
 }
 
 #logo {
@@ -66,7 +67,6 @@ header {
 	position:absolute;
 	top:7.7vh;
 	text-align:center;
-	overflow:hidden;
 }
 
 #imgLogo {
@@ -343,13 +343,14 @@ header {
 #zone {
 	
 	position:absolute;
-	top:7.7vh;
+	top:0;
 	border: solid 0px black;
 	width: 100vw;
-	height:92.3vh;
-	z-index:4;
+	height:100vh;
+	z-index:10;
 	user-select:none;
 	overflow:hidden;
+	
 }
 
 /* border: solid 1px black; */
