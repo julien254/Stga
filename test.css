@@ -306,10 +306,10 @@ header {
 	top:3.4vh ;
 	left:4.25vw ;
 	width: 91.3vw;
-	height:1.51vh;
+	height:1.52vh;
 	background-color: black;
 	border-radius: 0.76vh;
-	overflow:hidden;
+	overflow-y:hidden;
 	
 }
 
@@ -321,9 +321,8 @@ header {
 	position:absolute;
 	top:0;
 	left:0;
+	z-index:1;
 	
-	
-
 
 }
 
@@ -337,8 +336,9 @@ header {
 	position:absolute;
 	top:0;
 	left:5%;
-	transform:scaleX(0);
+	transform:scaleX(1);
 	transform-origin: left;
+	z-index:2;
 }
 
 .animeCharge {
