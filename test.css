@@ -28,7 +28,7 @@ header {
 	position: absolute;
 	top:0;
 	left:0;
-	overflow:hidden;
+	
 }
 
 #fleche {
@@ -37,8 +37,9 @@ header {
 	position: absolute;
 	width:4vh;
 	height:auto;
-	left:5.37vw;
+	left:8.5vw;
 	top:2vh;
+	margin-left:-1.78vh;
 }
 
 #cqr { 
@@ -47,8 +48,9 @@ header {
 	position:absolute;
 	width:4.6vh;
 	height:auto;
-	right:3.8vw;
+	right:7.2vw;
 	top:1.7vh;
+	margin-right:-2vh;
 	
 }
 
@@ -79,7 +81,6 @@ header {
 	height:8.5vh;
 	position:absolute;
 	top:58.35vh;
-	text-align:center;
 
 }
 
@@ -88,16 +89,18 @@ header {
 	height:2.65vh;
 	position:absolute;
 	top:2vh;
-	left:6.4vw;
+	left:13.5vw;
+	margin-left:-3.9vh;
 
 }
 
 #periode {
 
-	display:inline;
-	height:1.58vh;
-	position:relative;
-	top:6.3vh;
+	height:1.56vh;
+	position:absolute;
+	left:50vw;
+	top:6.9vh;
+	margin-left:-7.75vh;
 	
 }
 
@@ -109,7 +112,7 @@ header {
 	top:67.1vh;
 	border: solid 0px black;
 	text-align:center;
-	font-weight:870;
+	font-weight:800;
 	font-size:3.5vh;
 }
 
@@ -128,12 +131,139 @@ header {
 
 .heure {
 
-font-weight:500;
-font-size:3.2vh;
-position:relative;
-top:-4.25vh;
-padding-right:0.6vw;
+	font-weight:500;
+	font-size:3.2vh;
+	position:relative;
+	top:-4.25vh;
+	padding-right:0.6vw;
 
+}
+
+#container {
+
+	position:absolute;
+	top:77vh;
+	height:15.9vh;
+	width:100vw;
+	border:solid 0px black;
+
+}
+
+#info { 
+
+	position:absolute;
+	left:50vw;
+	top:1.3vh;
+	height:1.78vh;
+	margin-left:-12.07vh;
+
+}
+
+#picto {
+
+	position:absolute;
+	top:4.45vh;
+	left:14.45vw;
+	height:6.8vh;
+	margin-left:-3.6vh;
+
+}
+
+#dateControle {
+
+	position:absolute;
+	left:50vw;
+	top:0.2vh;
+	font-size:3.65vh;
+	font-weight:800;
+	margin-left:-10.5vh;
+
+}
+
+#jsHeure3 {
+
+	position:absolute;
+	top:4.3vh;
+	left:50vw;
+	font-size:3.1vh;
+	font-weight:500;
+	margin-left:-4.8vh;
+
+}
+
+#numSerie {
+
+	height:2.33vh;
+	position:absolute;
+	top:12vh;
+	left:50vw;
+	margin-left:-15.85vh;
+
+}
+
+#compteurPos {
+
+	position:absolute;
+	top:4.05vh;
+	right:13vw;
+	font-weight: 750;
+	font-size: 3.3vh;
+	color: #00d00a;
+	letter-spacing:-0.1vh;
+	margin-right:-2.9vh;
+
+}
+
+
+
+#footer {
+
+	position:absolute;
+	top:92.9vh;
+	width:100vw;
+	height:7.1vh;
+	border:solid 0px black;
+
+}
+
+#charge {
+
+	position:absolute ;
+	top:3.4vh ;
+	left:4.25vw ;
+	width: 91.3vw;
+	height:1.5vh;
+	background-color: black;
+	border-radius: 0.75vh;
+	overflow:hidden;
+	
+}
+
+#debutCharge {
+
+	height: 100%;
+	width: 5%;
+	background-color: #00d00a;
+	float:left;
+
+
+}
+
+.defaultCharge{
+
+	height: 100%;
+	width: 95%;
+	background-color: #00d00a;
+	float:left;
+	border: solid black 0px;
+	transform:scaleX(0);
+	transform-origin: left;
+}
+
+.animeCharge {
+
+	transform:scaleX(1);
+	transition:transform 3600000ms linear;
 }
 
 /* border: solid 1px black; */
