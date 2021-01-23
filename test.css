@@ -315,8 +315,8 @@ header {
 
 #debutCharge {
 
-	height: 100%;
-	width: 5%;
+	height: 1.6vh;
+	width: 5vw;
 	background-color: #00d00a;
 	float:left;
 
