@@ -309,6 +309,7 @@ header {
 	height:1.5vh;
 	background-color: black;
 	border-radius: 0.76vh;
+	overflow:hidden;
 	
 	
 }
