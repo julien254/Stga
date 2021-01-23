@@ -3,7 +3,7 @@ body, html{
 	margin:0;
 	overflow:hidden;
 	font-family:arial;
-	border:solid 1px black;
+	border:solid 0px black;
 	
 }
 
@@ -137,6 +137,8 @@ header {
 
 	left:75vw;
 	width:25vw;
+	border: solid 0px black;
+	
 
 }
 
