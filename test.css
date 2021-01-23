@@ -306,10 +306,10 @@ header {
 	top:3.4vh ;
 	left:4.25vw ;
 	width: 91.3vw;
-	height:1.52vh;
+	height:1.5vh;
 	background-color: black;
 	border-radius: 0.76vh;
-	overflow:hidden;
+	
 	
 }
 
@@ -322,6 +322,7 @@ header {
 	top:0;
 	left:0;
 	z-index:1;
+	border-radius:0.75vh 0 0 0.75vh;
 	
 
 }
@@ -335,8 +336,8 @@ header {
 	border: solid black 0px;
 	position:absolute;
 	top:0;
-	left:5%;
-	transform:scaleX(1);
+	left:4.9%;
+	transform:scaleX(0.4);
 	transform-origin: left;
 	z-index:2;
 }
