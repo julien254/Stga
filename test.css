@@ -309,13 +309,13 @@ header {
 	height:1.52vh;
 	background-color: black;
 	border-radius: 0.76vh;
-	overflow-y:hidden;
+	overflow:hidden;
 	
 }
 
 #debutCharge {
 
-	height: 100%;
+	height: 103%;
 	width: 5%;
 	background-color: #00d00a;
 	position:absolute;
@@ -328,7 +328,7 @@ header {
 
 .defaultCharge{
 
-	height: 100%;
+	height: 120%;
 	width: 95%;
 	background-color: #00d00a;
 	float:left;
