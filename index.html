@@ -22,9 +22,18 @@
 
 		</header>
 		
+		<div id="zone" onmousedown="down(event)" onmousemove="move(event)" onmouseup="up(event)" ontouchstart="moveBouleTouch(event)" ontouchmove="moveBouleTouch(event)" ontouchend="resetBoule()">
+		</div>
+		
 		<div id="logo">
 		
 			<img id="imgLogo" src="img/logo.png">
+			<div class="animeBoule" id="baliseBoule">
+		
+				<div id="bouleStga1" class="bouleStga" ></div>
+				<div id="bouleStga2" class="bouleStga" ></div>
+					
+			</div>
 				
 		</div>
 		<div id="titreCadre1" >

@@ -78,6 +78,46 @@ header {
 
 }
 
+.animeBoule {
+
+	border:solid 0px black;
+	position:absolute;
+	top:13.5vh;
+	left:50vw;
+	margin-left:-11.8vh;
+	width:23.5vh;
+	height:23.5vh;
+	border-radius:50%;
+	z-index: 2;
+
+}
+
+.bouleStga {
+
+	width: 6.3vh;
+	height:6.3vh;
+	border: solid black 0px;
+	position:absolute;
+	border-radius: 50%;
+	top:50%;
+	margin-top:-3.15vh;
+
+}
+
+#bouleStga1 {
+
+	margin-left:-3.15vh;
+	background-color: blue;
+}
+
+#bouleStga2 {
+
+	right:0;
+	margin-right:-3.15vh;
+	background-color: orange;
+
+}
+
 #titreCadre1 {
 
 	border: solid 0px black;
@@ -278,6 +318,17 @@ header {
 
 	transform:scaleX(1);
 	transition:transform 3600000ms linear;
+}
+
+#zone {
+	
+	position:absolute;
+	top:7.7vh;
+	border: solid 0px black;
+	width: 100vw;
+	height:92.3vh;
+	z-index:4;
+	user-select:none;
 }
 
 /* border: solid 1px black; */
