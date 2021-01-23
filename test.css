@@ -309,17 +309,18 @@ header {
 	height:1.5vh;
 	background-color: black;
 	border-radius: 0.75vh;
-	overflow:hidden;
+	overflow:;
 	
 }
 
 #debutCharge {
 
-	height: 1.6vh;
+	height: 1.5vh;
 	width: 5vw;
 	background-color: #00d00a;
 	float:left;
-	border:solid 1px #00d00a;
+	border-radius:0.75vh 0 0 0.75vh;
+	
 
 
 }
