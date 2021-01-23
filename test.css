@@ -3,6 +3,7 @@ body, html{
 	margin:0;
 	overflow:hidden;
 	font-family:arial;
+	border:solid 1px black;
 	
 }
 
@@ -135,6 +136,7 @@ header {
 #date2 {
 
 	left:75vw;
+	width:25vw;
 
 }
 
