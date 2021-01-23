@@ -92,6 +92,24 @@ header {
 
 }
 
+@keyframes rotateBoule {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animeBouleEnd {
+
+	animation-duration: 3000ms;
+	animation-name: rotateBoule;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+}
+
 .bouleStga {
 
 	width: 4.48vh;
@@ -106,14 +124,14 @@ header {
 
 #bouleStga1 {
 
-	margin-left:-2.24vh;
+	margin-left:-2.4vh;
 	background-color: blue;
 }
 
 #bouleStga2 {
 
 	right:0;
-	margin-right:-2.24vh;
+	margin-right:-2.4vh;
 	background-color: orange;
 
 }
@@ -227,10 +245,10 @@ header {
 
 	position:absolute;
 	left:49vw;
-	top:1.3vh;
+	top:0.5vh;
 	font-size:3.2vh;
 	font-weight:800;
-	margin-left:-8.1vh;
+	margin-left:-9vh;
 
 }
 
