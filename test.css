@@ -94,26 +94,26 @@ header {
 
 .bouleStga {
 
-	width: 4.4vh;
-	height:4.4vh;
+	width: 4.48vh;
+	height:4.48vh;
 	border: solid black 0px;
 	position:absolute;
 	border-radius: 50%;
 	top:50%;
-	margin-top:-2.2vh;
+	margin-top:-2.24vh;
 
 }
 
 #bouleStga1 {
 
-	margin-left:-2.2vh;
+	margin-left:-2.24vh;
 	background-color: blue;
 }
 
 #bouleStga2 {
 
 	right:0;
-	margin-right:-2.2vh;
+	margin-right:-2.24vh;
 	background-color: orange;
 
 }
