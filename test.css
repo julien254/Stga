@@ -305,10 +305,10 @@ header {
 	position:absolute ;
 	top:3.4vh ;
 	left:4.25vw ;
-	width: 91.3vw;
-	height:1.5vh;
+	width:91.3vw;
+	height:1.2vh;
 	background-color: black;
-	border-radius: 0.76vh;
+	border-radius: 1.35vh;
 	overflow:hidden;
 	
 	
@@ -320,7 +320,7 @@ header {
 	width: 100%;
 	background-color: #00d00a;
 	border: solid black 0px;
-	transform:scaleX(0.06);
+	transform:scaleX(0.07);
 	transform-origin: left;
 	
 }
