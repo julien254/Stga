@@ -113,7 +113,7 @@ header {
 	border: solid 0px black;
 	text-align:center;
 	font-weight:800;
-	font-size:3.5vh;
+	font-size:3.3vh;
 }
 
 .dates {
@@ -132,7 +132,7 @@ header {
 .heure {
 
 	font-weight:500;
-	font-size:3.2vh;
+	font-size:3vh;
 	position:relative;
 	top:-4.25vh;
 	padding-right:0.6vw;
@@ -174,7 +174,7 @@ header {
 	position:absolute;
 	left:50vw;
 	top:0.2vh;
-	font-size:3.65vh;
+	font-size:3.45vh;
 	font-weight:800;
 	margin-left:-10.5vh;
 
@@ -185,7 +185,7 @@ header {
 	position:absolute;
 	top:4.3vh;
 	left:50vw;
-	font-size:3.1vh;
+	font-size:3vh;
 	font-weight:500;
 	margin-left:-4.8vh;
 
@@ -207,7 +207,7 @@ header {
 	top:4.05vh;
 	right:13vw;
 	font-weight: 750;
-	font-size: 3.3vh;
+	font-size: 3.2vh;
 	color: #00d00a;
 	letter-spacing:-0.1vh;
 	margin-right:-2.9vh;
