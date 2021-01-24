@@ -4,26 +4,26 @@ var check = false;
 var i = 0;
 
 function pixelToVw(pixel) {
-	
+
 	var vh = 0;
 	var hauteur = window.innerHeight;
 	vh = (pixel / hauteur) * 100;
-	return (vh) + "vh";	
+	return (vh) + "vh";
 }
 
 function pixelToVh(pixel) {
-	
+
 	var vh = 0;
 	var hauteur = window.innerHeight;
 	vh = (pixel / hauteur) * 100;
-	return (vh -19.45) + "vh";	
+	return (vh -19.45) + "vh";
 }
 
 function compteur() {
 
 	if(check){
-	
-	
+
+
 		function print(num) {
 			document.getElementById("span").textContent = minuteCompteur+':'+num;
 		}
@@ -75,18 +75,18 @@ function recupDate(){
 
 	check = true;
 	var date = new Date();
-	
+
 	var jour = date.getDate();
-	
+
 	var mois = date.getMonth();
 	mois = 1 + mois;
-	
+
 	var annee = date.getFullYear();
-	
+
 	var heure = date.getHours();
-	
+
 	var minute = date.getMinutes();
-	
+
 	if (jour < 10) {
 		jour = "0" + jour;
 	}
@@ -97,18 +97,18 @@ function recupDate(){
 		heure = "0"+ heure;
 	}
 	if (minute < 10) {
-		minute = "0"+ minute;	
+		minute = "0"+ minute;
 	}
 	document.getElementById("jsDate1").textContent = jour+'/'+mois+'/'+annee;
 	document.getElementById("jsHeure1").textContent = heure+':'+minute;
 	document.getElementById("jsDate2").textContent = jour+'/'+mois+'/'+annee;
-	if(heure === "00") {	
-		heure = "01";	
+	if(heure === "00") {
+		heure = "01";
 	}
 	else if(heure === "01") {
 		heure = "02";
-	}	
-	else if(heure === "02") {	
+	}
+	else if(heure === "02") {
 		heure = "03";
 	}
 	else if(heure === "03") {
@@ -152,35 +152,41 @@ function recupDate(){
 }
 
 function moveBouleTouch(event) {
-	
-	if (check) {
-		console.log(event);
 
+	if (check) {
+
+		var body = document.getElementById("body");
 		var posX = event.touches[0].clientX;
 		var posY = event.touches[0].clientY;
 		var posYFinal = posY + window.pageYOffset;
 		var boules = document.getElementById("baliseBoule");
+		var boules = document.getElementById("baliseBoule");
+		body.style.will-change = "scroll-position";
+		boules.style.will-change = "top, left, animationDuration"
 		boules.style.top = (pixelToVh(posYFinal));
 		boules.style.left = (pixelToVw(posX));
 		boules.style.animationDuration = "1000ms";
-	
+
 	}
 }
 
 function moveBouleSouris(event) {
-	
+
 	if (check) {
 
+		var body = document.getElementById("body");
 		var posX = event.clientX;
 		var posY = event.clientY;
 		var posYFinal = posY + window.pageYOffset;
 		var boules = document.getElementById("baliseBoule");
+		body.style.will-change = "scroll-position";
+		boules.style.will-change = "top, left, animationDuration"
 		boules.style.top = (pixelToVh(posYFinal));
 		boules.style.left = (pixelToVw(posX));
 		boules.style.animationDuration = "1000ms";
-		
-		
-	
+
+
+
 	}
 }
 
@@ -223,7 +229,10 @@ function reset(){
 
 function resetBoule() {
 
+	var boules = document.getElementById("baliseBoule");
+	body.style.will-change = "auto";
 	var elem = document.getElementById("baliseBoule");
+	elem.style.will-change = "auto"
 	elem.style.top = "13.5vh";
 	elem.style.left = "50vw";
 	elem.style.animationDuration = "3000ms";
@@ -231,5 +240,5 @@ function resetBoule() {
 }
 
 
-	
+
 
