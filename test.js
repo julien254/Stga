@@ -210,11 +210,11 @@ function reset(){
 	secondeCompteur = 0;
 	var boule = document.getElementById("baliseBoule");
 	boule.style.animationIterationCount = "0";
-	document.getElementById("jsDate1").textContent = '00/00/00';
+	document.getElementById("jsDate1").textContent = '00/00/0000';
 	document.getElementById("jsHeure1").textContent = '0:00';
-	document.getElementById("jsDate2").textContent = '00/00/00';
+	document.getElementById("jsDate2").textContent = '00/00/0000';
 	document.getElementById("jsHeure2").textContent = '0:00';
-	document.getElementById("dateControle").textContent = '00/00/00';
+	document.getElementById("dateControle").textContent = '00/00/0000';
 	document.getElementById("jsHeure3").textContent = '0:00';
 	var x = document.getElementById("baliseCharge");
 	x.classList.remove('animeCharge');
