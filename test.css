@@ -1,62 +1,82 @@
-
-
-html, body {
-
+body{
+	
 	margin:0;
-	font-size: 6.2vw;
-	font-weight: 850;
-	overflow-x:hidden;
+	height:100vh;
+	overflow:hidden;
+	font-family:arial;
+	border:solid 0px black;
+	
+}
+
+#background {
+	
+	width:100vw;
+	height:100vh;
+
 	
 }
 
 img {
-
-	width : 100vw;
-	display: block;
+	
+	display:block;
 	
 }
 
-p{
-
-	border: solid black 0px;
-	text-align: center;
-	width: 50vw;
-	position:absolute ;
-	top: -4vw;
-	left: 0;
+header {
+	
+	width:100vw;
+	height:7.7vh;
+	border: solid 0px black;
+	position: absolute;
+	top:0;
+	left:0;
 	
 }
 
-button {
-
-	position:absolute;
+#fleche {
+	
+	border-radius: 50%;
+	position: absolute;
+	width:3.4vh;
+	height:auto;
+	left:8.5vw;
+	top:2vh;
+	margin-left:-1.5vh;
 	border:solid 0px black;
-	background-color:transparent;
-	border-radius:4.5vw;
+	z-index:20;
 }
 
-#buttonActive {
+#cqr { 
 
-	top: 3.3vw;
-	left: 87.7vw;
-	width: 9vw;
-	height: 9vw;
-	
-
-}
-
-#buttonReset {
-
-	top:4vw;
-	left: 5vw;
-	width: 7.5vw;
-	height: 7.5vw;
-	
+	border-radius: 50%;
+	position:absolute;
+	width:4.1vh;
+	height:auto;
+	right:7.2vw;
+	top:1.7vh;
+	margin-right:-1.7vh;
+	border:solid 0px black;
+	z-index:20;
 }
 
 #logo {
 
-	position:relative ;
+	height:50.55vh;
+	width:100vw;
+	border: solid 0px black;
+	position:absolute;
+	top:7.7vh;
+	text-align:center;
+}
+
+#imgLogo {
+
+	border-radius:50%;
+	width: auto;
+	height: 23.5vh;
+	display:inline;
+	margin-top:13.6vh;
+	border:solid 0px black;
 
 }
 
@@ -64,11 +84,12 @@ button {
 
 	border:solid 0px black;
 	position:absolute;
-	top:26.5vw;
-	left:27vw;
-	width:45.8vw;
-	height:45.8vw;
-	border-radius:23vw;
+	top:13.5vh;
+	left:50vw;
+	margin-left:-11.8vh;
+	width:23.5vh;
+	height:23.5vh;
+	border-radius:50%;
 	z-index: 2;
 
 }
@@ -93,202 +114,215 @@ button {
 
 .bouleStga {
 
-	width: 9vw;
-	height: 9vw;
+	width: 4.48vh;
+	height:4.48vh;
 	border: solid black 0px;
 	position:absolute;
-	border-radius: 4.5vw;
-	
+	border-radius: 50%;
+	top:50%;
+	margin-top:-2.24vh;
 
 }
 
 #bouleStga1 {
 
-	top: 18.8vw;
-	left: -4.8vw;
+	margin-left:-2.4vh;
 	background-color: blue;
-
 }
 
 #bouleStga2 {
 
-	top: 18.8vw;
-	right: -4.8vw;
+	right:0;
+	margin-right:-2.4vh;
 	background-color: orange;
 
 }
 
-.date {
+#titreCadre1 {
 
-	width: 50vw;
+	border: solid 0px black;
+	width:100vw;
+	height:8.5vh;
+	position:absolute;
+	top:58.35vh;
+
+}
+
+#voyage {
+
+	height:2.45vh;
+	position:absolute;
+	top:2vh;
+	left:14.5vw;
+	margin-left:-3.9vh;
+	
+
+}
+
+#periode {
+
+	height:1.46vh;
+	position:absolute;
+	left:50vw;
+	top:7.06vh;
+	margin-left:-7.33vh;
 	
 }
 
-.containerDates {
+.datesContainer {
 
-	position:relative;
-	
+	width:50vw;
+	height:9.9vh;
+	position:absolute;
+	top:67.1vh;
+	border: solid 0px black;
+	font-weight:800;
+	font-size:3.05vh;
+}
+
+.dates {
+
+	position:absolute;
+	top:-2.25vh;
+	margin-left:-8.1vh;
 }
 
 #date1 {
 
-	margin-left: 0.1054vw;
-	position:relative;
-	border: solid 0px black;
-}
+	left:24.8vw;
 
+}
 
 #date2 {
 
-	position:absolute;
-	left:50vw;
-    top:0;
-    
+	left:75vw;
+	width:25vw;
+	border: solid 0px black;
+	
+
 }
 
-.jsHeure {
+.heure {
 
-	font-weight: 450;
-	font-size: 5.7vw;
-	top:4.4vw;
+	font-weight:500;
+	font-size:2.75vh;
+	position:absolute;
+	top:1.5vh;
+	margin-left:-3.4vh;
+	left:-0.3vw;
+
+}
+
+#container {
+
+	position:absolute;
+	top:77vh;
+	height:15.9vh;
+	width:100vw;
+	border:solid 0px black;
+
+}
+
+#info { 
+
+	position:absolute;
+	left:50vw;
+	top:1.4vh;
+	height:1.58vh;
+	margin-left:-10.8vh;
 
 }
 
 #picto {
 
-	width: 20.7vw;
-	float:left;
+	position:absolute;
+	top:4.73vh;
+	left:14.45vw;
+	height:6.15vh;
+	margin-left:-3.37vh;
 
 }
 
-#date3 {
+#dateControle {
 
-	width:58.2vw;
-	padding-left:0.13vw;
-	margin-top: -0.01vw ;
-	margin-left: -0.07vw;
+	position:absolute;
+	left:49vw;
+	top:0.8vh;
+	font-size:3.2vh;
+	font-weight:800;
+	margin-left:-9vh;
 
-}
-
-.positionDate3 {
-
-	position: relative;
-	z-index: 0;
-	overflow: hidden;
-		
 }
 
 #jsHeure3 {
 
-	font-weight: 450;
-	font-size: 5.7vw;
-	width:57vw;
-	top:4vw;
-	left:0;
+	position:absolute;
+	top:4.65vh;
+	left:49vw;
+	font-size:2.85vh;
+	font-weight:500;
+	margin-left:-3.8vh;
 
 }
 
 #numSerie {
 
-	width:58.2vw;
-	margin-top: -0.17vw;
-	
+	height:2.12vh;
+	position:absolute;
+	top:12.24vh;
+	left:50vw;
+	margin-left:-14.3vh;
 
-	
-}
-
-#numSerieIndex {
-	
-	position:relative;
-	left:0.07vw;
-	z-index: 1;
-
-}
-
-#compteur {
-
-	width: 21.1vw;
-	position: absolute;
-	left:78.97vw;
-	top: 0;
-	margin-top: -0.35vw;
-	margin-right: -0.06vw;
-	
-}
-
-#dateControle {
-
-	width: 58.2vw;
-	position:absolute ;
-	top: -4vw;
-	left: -1vw;
-	
 }
 
 #compteurPos {
 
 	position:absolute;
-	left: 76.5vw;
-	top:2.5vw;
-	width:21vw;
-
-}
-
-#compteurPos span {
-
+	top:4.6vh;
+	right:13vw;
 	font-weight: 750;
-	font-size: 5.8vw;
+	font-size: 2.9vh;
 	color: #00d00a;
-	letter-spacing:-0.2vw;
+	letter-spacing:-0.1vh;
+	margin-right:-2.5vh;
 
 }
 
-span {
 
-	font-weight: 450;
-	font-size: 5.7vw;
-
-}
 
 #footer {
 
-	position: relative;
+	position:absolute;
+	top:92.9vh;
+	width:100vw;
+	height:7.1vh;
+	border:solid 0px black;
 
 }
 
 #charge {
 
 	position:absolute ;
-	top:6.08vw ;
+	top:3.4vh ;
 	left:4.25vw ;
-	width: 91.3vw;
-	height:2.85vw;
-	margin-left:0.1vw;
+	width:91.3vw;
+	height:1.25vh;
 	background-color: black;
-	border-radius: 1.7vw;
+	border-radius: 0.62vh;
 	overflow:hidden;
 	
-}
-
-#debutCharge {
-
-	height: 100%;
-	width: 5%;
-	background-color: #00d00a;
-	float:left;
-
-
+	
 }
 
 .defaultCharge{
 
 	height: 100%;
-	width: 95%;
+	width: 100%;
 	background-color: #00d00a;
-	float: left;
 	border: solid black 0px;
-	transform:scaleX(0);
+	transform:scaleX(0.05);
 	transform-origin: left;
+	
 }
 
 .animeCharge {
@@ -297,27 +331,17 @@ span {
 	transition:transform 3600000ms linear;
 }
 
-#correction {
-
-	width:16.8vw;
-	position:absolute;
-	top:128.92vw;
-	left:47.7vw;
-}
-
-.border {
-
-	border: solid 1px black;
-
-}
-
 #zone {
 	
 	position:absolute;
-	top: 15.55vw;
+	top:0;
 	border: solid 0px black;
 	width: 100vw;
-	height:181vw;
-	z-index:4;
+	height:100vh;
+	z-index:10;
 	user-select:none;
+	overflow:hidden;
+	
 }
+
+/* border: solid 1px black; */

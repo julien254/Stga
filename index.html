@@ -5,119 +5,79 @@
 	<head>
 
 		<meta charset="utf-8">
-		<title>Fake Stga</title>
+
+		
+		<meta name="theme-color" content="DarkRed">
+		<title>Take Your Tickets!</title>
+
 		<link rel="stylesheet" href="test.css">
+                <link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- FAVICON -->
+                <link rel="icon" href="favicon.ico" />
 		<script src="test.js"></script>
 	
 	</head>
 
-	<body>
+	<body id="bodyHtml">
+		
+		<img id="background" src="img/background.jpg">
 		
 		<header>
-				
-			<img src="img/headerStga.jpg">
-			<button id="buttonActive" type="button" onfocus="blur()" onclick="recupDate()"></button>
-			<button id="buttonReset" type="button" onfocus="blur()" onclick="reset()"></button>
 			
-				
+			<img id="fleche" onclick="reset()" src="img/fleche.png">
+			<img id="cqr" onclick="recupDate()" src="img/cqr.png">
+
 		</header>
 		
 		<div id="zone" onmousedown="down(event)" onmousemove="move(event)" onmouseup="up(event)" ontouchstart="moveBouleTouch(event)" ontouchmove="moveBouleTouch(event)" ontouchend="resetBoule()">
-		</div>
+			<div id="logo">
 		
-		<div id="container">
-			
-			<div id="logo" >
-			
-				<img id="button" src="img/logoStga.jpg">
+				<img id="imgLogo" src="img/logo.png">
 				<div class="animeBoule" id="baliseBoule">
 		
 					<div id="bouleStga1" class="bouleStga" ></div>
 					<div id="bouleStga2" class="bouleStga" ></div>
 					
 				</div>
-				
-			</div>
-			
-			<div>
-			
-				<img src="img/periodeValideStga.jpg">
-			
-			</div>
+			</div>	
+		</div>
+		<div id="titreCadre1" >
 		
-			<div class="containerDates">
+			<img id="voyage" src="img/1voyage.png" >
+			<img id="periode" src="img/periodeDeValid.png" >
 			
-				<div id="date1">
-				
-					<img class="date" src="img/date1.jpg">
-					<p id="jsDate1">00/00/0000</p><p id="jsHeure1"  class="jsHeure" >00:00</p>
-					
-				</div>
-				
-				<div class="" id="date2">
-				
-					<img class="date" src="img/date2.jpg">
-					<p id="jsDate2">00/00/0000</p><p id="jsHeure2"  class="jsHeure" >00:00</p>
-					
-				</div>
-				
-			</div>
-				
-			<div>
+		</div>
+		<div class="datesContainer" id="date1" >
+			<p class="dates" id="jsDate1">01/01/2021</p>
+			<p class="heure" id="jsHeure1" >12:00</p>
+		
+		</div>
+		<div class="datesContainer" id="date2" >
+			<p class="dates" id="jsDate2">01/01/2021</p>
+			<p class="heure" id="jsHeure2" >13:00</p>
+		</div>
+		
+		<div id="container">
+		
 			
-				<img src="img/infoControl.jpg">
+			<img id="info" src="img/controle.jpg">
 			
-			</div>
+			<img id="picto" src="img/picto.png">
 			
-			<div class="containerDates">
+			<p id="dateControle">01/01/2021</p>
+			<p id="jsHeure3" >13:00</p>
 			
-				<div>
-				
-					<img id="picto" src="img/picto.jpg">
-				
-				</div>
-				
-				<div class="positionDate3">
-					
-					<img id="date3" src="img/date3.jpg">
-					<p id="dateControle">00/00/0000</p><p id="jsHeure3" >00:00</p>
-					
-				</div>
-				
-				<div id="numSerieIndex">
-				
-					<img id="numSerie" src="img/numSerie.jpg">
-				
-				</div>
-				
-				<div>
-				
-					<img id="compteur" src="img/compteur.jpg">
-					<p id="compteurPos"><span id="span" >0:00</span></p>
-				</div>
+			<img id="numSerie" src="img/numSerie.png">
 			
-			</div>
-			
-			<div id="footer" >
-			
-				<img src="img/barreCharge.jpg">
-				<div id="charge">
-				
-					<div id="debutCharge" ></div>
-					<div class="defaultCharge" id="baliseCharge"  ></div>
-				
-				</div>
-			
-			</div>
-			
-			<div >
-			
-				<img id="correction" src="img/correction.jpg">
-			
-			</div>
+			<p id="compteurPos"><span id="span">0:00</span></p>	
 		
 		</div>
 		
+		<div id="footer" >	
+			<div id="charge">
+				<div class="defaultCharge" id="baliseCharge"  ></div>
+			</div>
+		</div>
+		
 	</body>
-
+	
 </html>
