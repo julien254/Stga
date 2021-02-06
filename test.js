@@ -4,26 +4,26 @@ var check = false;
 var i = 0;
 
 function pixelToVw(pixel) {
-	
+
 	var vh = 0;
 	var hauteur = window.innerHeight;
 	vh = (pixel / hauteur) * 100;
-	return (vh) + "vh";	
+	return (vh) + "vh";
 }
 
 function pixelToVh(pixel) {
-	
+
 	var vh = 0;
 	var hauteur = window.innerHeight;
 	vh = (pixel / hauteur) * 100;
-	return (vh -19.45) + "vh";	
+	return (vh -19.45) + "vh";
 }
 
 function compteur() {
 
 	if(check){
-	
-	
+
+
 		function print(num) {
 			document.getElementById("span").textContent = minuteCompteur+':'+num;
 		}
@@ -75,18 +75,18 @@ function recupDate(){
 
 	check = true;
 	var date = new Date();
-	
+
 	var jour = date.getDate();
-	
+
 	var mois = date.getMonth();
 	mois = 1 + mois;
-	
+
 	var annee = date.getFullYear();
-	
+
 	var heure = date.getHours();
-	
+
 	var minute = date.getMinutes();
-	
+
 	if (jour < 10) {
 		jour = "0" + jour;
 	}
@@ -97,18 +97,18 @@ function recupDate(){
 		heure = "0"+ heure;
 	}
 	if (minute < 10) {
-		minute = "0"+ minute;	
+		minute = "0"+ minute;
 	}
 	document.getElementById("jsDate1").textContent = jour+'/'+mois+'/'+annee;
 	document.getElementById("jsHeure1").textContent = heure+':'+minute;
 	document.getElementById("jsDate2").textContent = jour+'/'+mois+'/'+annee;
-	if(heure === "00") {	
-		heure = "01";	
+	if(heure === "00") {
+		heure = "01";
 	}
 	else if(heure === "01") {
 		heure = "02";
-	}	
-	else if(heure === "02") {	
+	}
+	else if(heure === "02") {
 		heure = "03";
 	}
 	else if(heure === "03") {
@@ -152,7 +152,7 @@ function recupDate(){
 }
 
 function moveBouleTouch(event) {
-	
+
 	if (check) {
 		console.log(event);
 		var bodyHtml = document.getElementById("bodyHtml");
@@ -165,12 +165,12 @@ function moveBouleTouch(event) {
 		boules.style.top = (pixelToVh(posYFinal));
 		boules.style.left = (pixelToVw(posX));
 		boules.style.animationDuration = "1000ms";
-	
+
 	}
 }
 
 function moveBouleSouris(event) {
-	
+
 	if (check) {
 
 		var bodyHtml = document.getElementById("bodyHtml");
@@ -183,9 +183,9 @@ function moveBouleSouris(event) {
 		boules.style.top = (pixelToVh(posYFinal));
 		boules.style.left = (pixelToVw(posX));
 		boules.style.animationDuration = "1000ms";
-		
-		
-	
+
+
+
 	}
 }
 
@@ -238,6 +238,36 @@ function resetBoule() {
 
 }
 
+if ("serviceWorker" in navigator) {
+  // On essaye d'enregistrer le service
+  // worker
+  navigator.serviceWorker
+  .register("service-worker.js")
+    .then(registration => {
+      // Le Service Worker a fini d'être
+      // téléchargé.
+      console.log("App: Téléchargement fini.");
 
-	
+      registration.addEventListener("updatefound", () => {
+        // On récupère le Service
+        // Worker en cours
+        // d'installation
+        const newWorker = registration.installing;
+        // `registration` a aussi
+        // les clés `active` et
+        // `waiting` qui permettent
+        // de récupérer les Service
+        // Workers correspondant
 
+        newWorker.addEventListener("statechange", () => {
+          // Le service worker a
+          // changé d'état
+          console.log("App: Nouvel état :", newWorker.state);
+        });
+      });
+    })
+    .catch(err => {
+      // Il y a eu un problème
+      console.error("Y'a une couille dans le paté", err);
+    });
+}
