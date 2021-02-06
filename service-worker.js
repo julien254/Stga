@@ -9,7 +9,6 @@ self.addEventListener("fetch", (event) => {
                  cache.put(event.request, fResponse.clone())
                      .then(() => fResponse)
              );
-             console.log(cache);
          })
      ));
  });
